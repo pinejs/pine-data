@@ -1,0 +1,38 @@
+{
+  "name": "pine-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint lib test *.js",
+    "test": "npm run lint && ava test/**/*.test.js",
+    "test-cov": "nyc ava test/**/*.test.js && nyc report --reporter=lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinejs/pine-mongoose.git"
+  },
+  "keywords": [
+    "pine.js",
+    "framework",
+    "mongoose"
+  ],
+  "author": "Frank Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinejs/pine-mongoose/issues"
+  },
+  "homepage": "https://github.com/pinejs/pine-mongoose#readme",
+  "dependencies": {
+    "debug": "^2.6.3",
+    "koa-mongoose": "^2.0.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "mongoose": "^4.9.4"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "eslint": "^3.18.0",
+    "nyc": "^10.2.0"
+  }
+}
